@@ -1,0 +1,22 @@
+<html>
+<script src="js/money.js"></script>
+<script type="text/javascript"
+src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js">
+</script>
+
+<script type="text/javascript">
+var demo = function(data) {
+  fx.rates = data.rates
+  document.write(data.rates.USD)
+}
+</script>
+
+
+<body>
+<script>
+$.getJSON("http://api.fixer.io/latest?base=EUR&symbols=USD",demo)
+//$.getJSON("http://api.fixer.io/2000-01-03",demo)
+</script>
+</body>
+
+</html>
