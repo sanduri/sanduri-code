@@ -1,0 +1,52 @@
+1 Network tools
+	Ping
+	WhoIs
+	Nmap
+	Traceroute
+	Resolution (A,PTR,NS,MX)
+	DNS info
+	Bandwidth
+	rdate
+
+2 Images
+	Conversion
+	Info
+	
+3 Text
+	Conversion
+	
+4 Colors
+	Formats
+	Conversion
+
+5 Date/Time
+	To/From Unixtimestamp
+	Date difference
+	Countdown
+
+6 Validation
+	JSON
+	XML
+	DASH
+	HLS
+
+7 Proxy
+
+8 File transfer
+
+9 Map/Geo	
+	Facts & Data
+	Weather
+
+10 Money
+	Currency conversion
+
+11 Players
+	RTMP
+	HLS
+	DASH
+	Smooth
+
+12 Characters
+	ASCII
+	HTML

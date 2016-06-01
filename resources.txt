@@ -1,0 +1,7 @@
+Server: Digital Ocean
+Domain: GoDaddy
+Web Server: Apache + PHP
+MySQL
+
+GEO: http://www.geonames.org/
+Currency: http://fixer.io/
