@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAIh2lMQTDfD3lGBnBZH7XF06CDHyfDe7Y"></script>
+<script src="startbootstrap/js/jquery.js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(51.508742,-0.120850),
+    zoom:3
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  map.addListener('click', function(event) {
+//http://api.geonames.org/weatherJSON?north=44.1&south=-9.9&east=-22.4&west=55.2&username=demo 
+	//http://openweathermap.org/forecast16#data
+        var dmJSON = "http://api.openweathermap.org/data/2.5/weather?units=metric&lat="+event.latLng.lat()+"&lon="+event.latLng.lng()+"&APPID=7ae0d947aba7dc1b9ee7dc42a650d144";
+
+	$.getJSON( dmJSON, function(data) {
+		console.log(data)
+		console.log(data.name+" "+data.weather.length)
+		// http://openweathermap.org/img/w/<icon>.png
+		//for (i=0;i<data.weatherObservations.length;i++) {
+	//	}
+
+});
+  });
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+
+<body>
+<div id="googleMap" style="width:1280px;height:640px;"></div>
+</body>
+
+</html>
